@@ -307,7 +307,7 @@ def get_doc_lines(file_name):
     doc_lines = {}
     doc_name = None
 
-    with open(file_name) as f:
+    with open(file_name, encoding="utf-8") as f:
         new_sentence = True
         for line in f:
             if line.startswith("#begin document"):
